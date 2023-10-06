@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JdXy4t6P9KWF8GMzqk7aLeWdrUccoJS2Cvuz/igqbE0NRiYYehRnpl6NhyxPhPdGP3ulJuimKD4SCV9Kdk417g==",
+  "dgSpecHash": "sS+29bjvhnZcxL4opvWaUban2FKUS+St18tW55bOVUhR3pjVr8hIjQWkq1kDmK7LFDUuzg0AFKJYR1uZTh8NNQ==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\opensource\\writes\\StringBuilder\\StringBuilder\\StringBuilder.csproj",
+  "projectFilePath": "E:\\Projects\\opensource\\writes\\principals\\design patterns\\creational\\StringBuilder\\StringBuilder\\StringBuilder.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

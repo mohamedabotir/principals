@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\opensource\\writes\\StringBuilder\\StringBuilder\\StringBuilder.csproj": {}
+    "E:\\Projects\\opensource\\writes\\principals\\design patterns\\creational\\StringBuilder\\StringBuilder\\StringBuilder.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\opensource\\writes\\StringBuilder\\StringBuilder\\StringBuilder.csproj": {
+    "E:\\Projects\\opensource\\writes\\principals\\design patterns\\creational\\StringBuilder\\StringBuilder\\StringBuilder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\opensource\\writes\\StringBuilder\\StringBuilder\\StringBuilder.csproj",
+        "projectUniqueName": "E:\\Projects\\opensource\\writes\\principals\\design patterns\\creational\\StringBuilder\\StringBuilder\\StringBuilder.csproj",
         "projectName": "StringBuilder",
-        "projectPath": "E:\\Projects\\opensource\\writes\\StringBuilder\\StringBuilder\\StringBuilder.csproj",
+        "projectPath": "E:\\Projects\\opensource\\writes\\principals\\design patterns\\creational\\StringBuilder\\StringBuilder\\StringBuilder.csproj",
         "packagesPath": "C:\\Users\\moham\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\opensource\\writes\\StringBuilder\\StringBuilder\\obj\\",
+        "outputPath": "E:\\Projects\\opensource\\writes\\principals\\design patterns\\creational\\StringBuilder\\StringBuilder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\moham\\AppData\\Roaming\\NuGet\\NuGet.Config",

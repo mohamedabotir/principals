@@ -12,3 +12,17 @@ E:\Projects\opensource\writes\StringBuilder\StringBuilder\obj\Debug\net7.0\refin
 E:\Projects\opensource\writes\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.pdb
 E:\Projects\opensource\writes\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.genruntimeconfig.cache
 E:\Projects\opensource\writes\StringBuilder\StringBuilder\obj\Debug\net7.0\ref\StringBuilder.dll
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\bin\Debug\net7.0\StringBuilder.exe
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\bin\Debug\net7.0\StringBuilder.deps.json
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\bin\Debug\net7.0\StringBuilder.runtimeconfig.json
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\bin\Debug\net7.0\StringBuilder.dll
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\bin\Debug\net7.0\StringBuilder.pdb
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.AssemblyInfoInputs.cache
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.AssemblyInfo.cs
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.csproj.CoreCompileInputs.cache
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.dll
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\refint\StringBuilder.dll
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.pdb
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\StringBuilder.genruntimeconfig.cache
+E:\Projects\opensource\writes\principals\design patterns\creational\StringBuilder\StringBuilder\obj\Debug\net7.0\ref\StringBuilder.dll
