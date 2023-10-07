@@ -1,0 +1,246 @@
+﻿{
+  "Version": 1,
+  "Properties": {
+    "AreNodeDescriptionsVisible": "True"
+  },
+  "Nodes": [
+    {
+      "Id": "1",
+      "Name": "PersonJobBuilder",
+      "Stereotype": "Class",
+      "CreatedAtUtc": "2023-10-07T08:42:55.2660425Z",
+      "AbsoluteTopLeft": "157.5798,71.4375",
+      "HeaderContentSize": "108.8233,52",
+      "NodeTotalSize": "108.8233,52",
+      "ChildrenAreaTopLeft": "1,0",
+      "IsPinned": true,
+      "Payload": {
+        "Discriminator": "RoslynType",
+        "SymbolName": "PersonJobBuilder",
+        "FullName": "class StringBuilder.Builders.PersonJobBuilder",
+        "Symbols": [
+          "StringBuilder.Builders.PersonJobBuilder"
+        ],
+        "IsDescriptionVisible": true,
+        "Accessibility": "Public",
+        "Origin": "SourceCode"
+      }
+    },
+    {
+      "Id": "3",
+      "Name": "PersonBuilder",
+      "Stereotype": "Class",
+      "CreatedAtUtc": "2023-10-07T08:43:23.4968985Z",
+      "AbsoluteTopLeft": "75.1623,-60.5625",
+      "HeaderContentSize": "102,52",
+      "NodeTotalSize": "102,52",
+      "ChildrenAreaTopLeft": "1,0",
+      "Payload": {
+        "Discriminator": "RoslynType",
+        "SymbolName": "PersonBuilder",
+        "FullName": "class StringBuilder.Builders.PersonBuilder",
+        "Symbols": [
+          "StringBuilder.Builders.PersonBuilder"
+        ],
+        "IsDescriptionVisible": true,
+        "Accessibility": "Public",
+        "Origin": "SourceCode"
+      }
+    },
+    {
+      "Id": "4",
+      "Name": "PersonAddressBuilder",
+      "Stereotype": "Class",
+      "CreatedAtUtc": "2023-10-07T08:43:35.0760141Z",
+      "AbsoluteTopLeft": "-26.2035,71.4489",
+      "HeaderContentSize": "133.7833,52",
+      "NodeTotalSize": "133.7833,52",
+      "ChildrenAreaTopLeft": "1,0",
+      "Payload": {
+        "Discriminator": "RoslynType",
+        "SymbolName": "PersonAddressBuilder",
+        "FullName": "class StringBuilder.Builders.PersonAddressBuilder",
+        "Symbols": [
+          "StringBuilder.Builders.PersonAddressBuilder"
+        ],
+        "IsDescriptionVisible": true,
+        "Accessibility": "Public",
+        "Origin": "SourceCode"
+      }
+    },
+    {
+      "Id": "5",
+      "Name": "Person",
+      "Stereotype": "Class",
+      "CreatedAtUtc": "2023-10-07T08:50:31.7575795Z",
+      "AbsoluteTopLeft": "87.0717,190.8365",
+      "HeaderContentSize": "102,52",
+      "NodeTotalSize": "102,52",
+      "ChildrenAreaTopLeft": "1,0",
+      "Payload": {
+        "Discriminator": "RoslynType",
+        "SymbolName": "Person",
+        "FullName": "class StringBuilder.Entities.Person",
+        "Symbols": [
+          "StringBuilder.Entities.Person"
+        ],
+        "IsDescriptionVisible": true,
+        "Accessibility": "Public",
+        "Origin": "SourceCode"
+      }
+    }
+  ],
+  "Connectors": [
+    {
+      "Id": "2",
+      "SourceNodeId": "1",
+      "TargetNodeId": "3",
+      "Stereotype": "Inheritance",
+      "Route": [
+        "195.0858,71.4375",
+        "143.068,-8.5625"
+      ],
+      "Payload": {
+        "Discriminator": "Other",
+        "Relationship": "StringBuilder.Builders.PersonJobBuilder|Inheritance|StringBuilder.Builders.PersonBuilder"
+      }
+    },
+    {
+      "Id": "3",
+      "SourceNodeId": "3",
+      "TargetNodeId": "1",
+      "Stereotype": "Association",
+      "Route": [
+        "143.068,-8.5625",
+        "195.0858,71.4375"
+      ],
+      "Payload": {
+        "Discriminator": "Association",
+        "Relationship": "StringBuilder.Builders.PersonBuilder|Association|StringBuilder.Builders.PersonJobBuilder",
+        "TargetLabels": [
+          {
+            "Label": {
+              "Text2": "Works",
+              "Tooltip": "public PersonJobBuilder Works { get; }"
+            },
+            "Symbol": "StringBuilder.Builders.PersonBuilder.Works"
+          }
+        ],
+        "TargetLabelCenter": "181.4578,50.4785"
+      }
+    },
+    {
+      "Id": "5",
+      "SourceNodeId": "3",
+      "TargetNodeId": "4",
+      "Stereotype": "Association",
+      "Route": [
+        "109.3279,-8.5625",
+        "57.5225,71.4489"
+      ],
+      "Payload": {
+        "Discriminator": "Association",
+        "Relationship": "StringBuilder.Builders.PersonBuilder|Association|StringBuilder.Builders.PersonAddressBuilder",
+        "TargetLabels": [
+          {
+            "Label": {
+              "Text2": "Lives",
+              "Tooltip": "public PersonAddressBuilder Lives { get; }"
+            },
+            "Symbol": "StringBuilder.Builders.PersonBuilder.Lives"
+          }
+        ],
+        "TargetLabelCenter": "71.11,50.4636"
+      }
+    },
+    {
+      "Id": "7",
+      "SourceNodeId": "4",
+      "TargetNodeId": "3",
+      "Stereotype": "Inheritance",
+      "Route": [
+        "57.5225,71.4489",
+        "109.3279,-8.5625"
+      ],
+      "Payload": {
+        "Discriminator": "Other",
+        "Relationship": "StringBuilder.Builders.PersonAddressBuilder|Inheritance|StringBuilder.Builders.PersonBuilder"
+      }
+    },
+    {
+      "Id": "8",
+      "SourceNodeId": "1",
+      "TargetNodeId": "5",
+      "Stereotype": "Association",
+      "Route": [
+        "195.8949,123.4375",
+        "154.1683,190.8365"
+      ],
+      "Payload": {
+        "Discriminator": "Association",
+        "Relationship": "StringBuilder.Builders.PersonJobBuilder|Association|StringBuilder.Entities.Person",
+        "TargetLabels": [
+          {
+            "Label": {
+              "Text2": "person",
+              "Tooltip": "private Person person",
+              "CanBeHidden": true
+            },
+            "Symbol": "StringBuilder.Builders.PersonJobBuilder.person"
+          }
+        ],
+        "TargetLabelCenter": "167.3279,169.5804"
+      }
+    },
+    {
+      "Id": "9",
+      "SourceNodeId": "4",
+      "TargetNodeId": "5",
+      "Stereotype": "Association",
+      "Route": [
+        "61.8962,123.4489",
+        "116.8637,190.8365"
+      ],
+      "Payload": {
+        "Discriminator": "Association",
+        "Relationship": "StringBuilder.Builders.PersonAddressBuilder|Association|StringBuilder.Entities.Person",
+        "TargetLabels": [
+          {
+            "Label": {
+              "Text2": "person",
+              "Tooltip": "private Person person",
+              "CanBeHidden": true
+            },
+            "Symbol": "StringBuilder.Builders.PersonAddressBuilder.person"
+          }
+        ],
+        "TargetLabelCenter": "101.0617,171.464"
+      }
+    },
+    {
+      "Id": "10",
+      "SourceNodeId": "3",
+      "TargetNodeId": "5",
+      "Stereotype": "Association",
+      "Route": [
+        "127.3939,-8.5625",
+        "136.84,190.8365"
+      ],
+      "Payload": {
+        "Discriminator": "Association",
+        "Relationship": "StringBuilder.Builders.PersonBuilder|Association|StringBuilder.Entities.Person",
+        "TargetLabels": [
+          {
+            "Label": {
+              "Text2": "person",
+              "Tooltip": "protected Person person { get; set; }",
+              "CanBeHidden": true
+            },
+            "Symbol": "StringBuilder.Builders.PersonBuilder.person"
+          }
+        ],
+        "TargetLabelCenter": "135.657,165.8645"
+      }
+    }
+  ]
+}
