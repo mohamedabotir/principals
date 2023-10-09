@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace StringBuilder.Abstraction
 {
     public interface IBuilderManager <out TBuilder,TSubject>
-        where TBuilder:IBuilder<TSubject>
-        where TSubject : IBuilderManager<IBuilder<TSubject>,TSubject>
+       where TBuilder : IBuilder<TSubject>
+        where TSubject : ICompany
     {
         TBuilder New { get; }
 

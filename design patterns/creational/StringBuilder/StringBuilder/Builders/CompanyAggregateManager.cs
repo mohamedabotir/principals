@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace StringBuilder.Builders
 {
-    internal class RevenuBuilder 
+    public class CompanyAggregateManager : IBuilderManager<ExpenseBuilder, CompanyBuilder>
     {
+        ExpenseBuilder IBuilderManager<ExpenseBuilder, CompanyBuilder>.New => new ExpenseBuilder();
     }
 }

@@ -1,21 +1,26 @@
-﻿using System;
+﻿using StringBuilder.Abstraction;
+using StringBuilder.Builders;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.JavaScript;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace StringBuilder.Entities
 {
-    internal class Company
+    public class Company
     {
         public int VatId { get; set; }
         public decimal TotalExpense { get; set; }
-        public int EmployeeCount { get; set; }
+        public int EmployeeCount { get { return _employees.Value.Count; } }
 
-        private Lazy<List<Employee>> _employees;
 
+
+        private Lazy<List<Employee>> _employees = new Lazy<List<Employee>>(new List<Employee>());
+        public IReadOnlyCollection<Employee> Employees{ get { return _employees.Value; } }
         public  void CreateEmployee(string name, decimal salary, int ssn, int countOfChild, bool isMarried) { 
-        if (!_employees.IsValueCreated) {
+        if (_employees.IsValueCreated) {
                 _employees.Value.Add(Employee.Create(name, salary, ssn, countOfChild, isMarried));
             }
            else
@@ -23,8 +28,10 @@ namespace StringBuilder.Entities
             Employee.Create(name, salary, ssn, countOfChild, isMarried) });
         }
 
+
+
     }
-    class Employee
+    public class Employee
     {
         public string Name { get; set; }
         public int SSN { get; set; }
@@ -34,11 +41,12 @@ namespace StringBuilder.Entities
         private int IndexScore { get; set; }
         public double Vat { get { return CalculateVat(); } }
 
+        public decimal NetSalary { get { return (Salary - (decimal)Vat * Salary ); }  }
         private double CalculateVat()
         {
             IndexScore += IsMarried ? 10 : 20;
             IndexScore += CountOfChild>1 ? 15 : 20;
-            return 100 / IndexScore;
+            return   IndexScore/ 100.0;
         }
         public static Employee Create(string name, decimal salary, int ssn, int countOfChild, bool isMarried)
         {

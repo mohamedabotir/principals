@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StringBuilder.Abstraction
 {
-    public interface IBuilder <TResult>
+    public interface IBuilder <TResult> where TResult : ICompany
     {
         TResult Build();
     }
